@@ -8,5 +8,5 @@ const firebaseConfig = {
     measurementId: "G-31YFWX5F6S" // Optional
 };
 
-const app = firebase.initializeApp(firebaseConfig);
-const storage = firebase.storage();
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
