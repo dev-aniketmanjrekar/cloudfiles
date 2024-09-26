@@ -7,8 +7,9 @@ const app = firebase.initializeApp(firebaseConfig);
 const storage = firebase.storage();
 
 function uploadFile() {
-    const fileInput = document.getElementById('file-input');
+const fileInput = document.getElementById('file-input');
     const file = fileInput.files[0];
+    console.log('Selected file:', file); // Add this line
     if (!file) {
         alert('Please select a file to upload');
         return;
