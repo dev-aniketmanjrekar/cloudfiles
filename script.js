@@ -1,9 +1,4 @@
-// Initialize Firebase (make sure to replace with your own Firebase config)
-const firebaseConfig = {
-    // Your Firebase configuration from firebase-config.js
-};
-
-const app = firebase.initializeApp(firebaseConfig);
+// Initialize Firebase
 const storage = firebase.storage();
 
 function uploadFile() {
