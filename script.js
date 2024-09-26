@@ -1,6 +1,3 @@
-// Initialize Firebase
-const storage = firebase.storage();
-
 function uploadFile() {
     const fileInput = document.getElementById('file-input');
     const file = fileInput.files[0];
