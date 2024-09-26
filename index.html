@@ -5,16 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>File Explorer</title>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-storage.js"></script>
+    <script src="firebase-config.js"></script>
 </head>
 <body>
     <div id="file-explorer">
         <h1>File Explorer</h1>
-        <ul id="file-list">
-            <li><a href="folder1/file1.txt">Folder 1 - File 1</a></li>
-            <li><a href="folder1/file2.txt">Folder 1 - File 2</a></li>
-            <li><a href="folder2/file3.txt">Folder 2 - File 3</a></li>
-            <li><a href="folder2/file4.txt">Folder 2 - File 4</a></li>
-        </ul>
+        <div id="upload-area">
+            <h2>Upload File</h2>
+            <input type="file" id="file-input">
+            <button onclick="uploadFile()">Upload</button>
+        </div>
+        <h2>Uploaded Files</h2>
+        <ul id="file-list"></ul>
     </div>
     <script src="script.js"></script>
 </body>
